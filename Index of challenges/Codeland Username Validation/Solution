@@ -1,0 +1,12 @@
+def CodelandUsernameValidation(strParam):
+
+  # code goes here
+  def CodelandUsernameValidation(str):
+   if len(str) < 25 and len(str) > 4 and (str[-1] != "_") and (str[0].isalpha() == True):
+     return "true"
+   else:
+     return "false"
+     return strParam
+
+# keep this function call here 
+print(CodelandUsernameValidation(input()))
