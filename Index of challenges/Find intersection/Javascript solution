@@ -1,0 +1,19 @@
+function FindIntersection(strArr) { 
+  
+  let first = strArr[0].split(', ')
+  let second = strArr[1].split(', ')
+  let result = first.filter(x => second.find(first => first === x))
+  return result.length > 0 ? result.join(',') : 'false'
+
+
+   
+// keep this function call here 
+console.log(FindIntersection(readline()));
+
+  // code goes here  
+  return strArr; 
+
+}
+   
+// keep this function call here 
+console.log(FindIntersection(readline()));
