@@ -1,0 +1,12 @@
+def LongestWord(sen):
+  Long = 0
+  for word in sen.split():
+      if (len(word) > Long  and word.isalpha()):
+        Long = len(word)
+        largest = word 
+  return largest
+  # code goes here
+  return sen
+
+# keep this function call here 
+print(LongestWord(input()))
