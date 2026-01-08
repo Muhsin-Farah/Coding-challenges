@@ -1,0 +1,19 @@
+def QuestionsMarks(str):
+    x = 11
+    y = 'false'
+    z = 0
+    for i in str:
+        if i.isdigit():
+            if int(i) + x == 10:
+                if z != 3:
+                    return 'false'
+                y = 'true'
+            z = 0
+            x = int(i)
+        elif i == '?':
+            z += 1
+    return y
+
+
+# keep this function call here
+print(QuestionsMarks(input()))
